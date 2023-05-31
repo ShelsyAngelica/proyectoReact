@@ -100,6 +100,7 @@ header{
 .cantidadProductoCarrito{
     font-weight: 400;
     font-size: 20px;
+    margin-right: 10px;
 }
 
 .iconClose{
@@ -140,7 +141,7 @@ header{
 }
 .btnClearAll {
     border: none;
-    background-color: #000;
+    background-color: #1ED760;
     color: #fff;
     padding: 15px 0;
     display: block;
@@ -157,6 +158,4 @@ header{
 
 .btnClearAll:hover {
     background-color: #333;
-    transform: scale(1.03);
-    border-radius: 0;
 }

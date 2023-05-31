@@ -1,13 +1,19 @@
-import styles from '../styles/Header.module.css'
-import  { useState } from 'react'
+import styles from '../styles/CarritodeCompra.module.css'
+import  { useState,useContext } from 'react'
 import imagen from '../Imagenes/carro-de-la-compra.png'
-export const Header = ({allProducts, 
-  setAllProducts,
-  countProducts, 
-  setCountProducts,
-  total, 
-  setTotal,
-    }) => {
+import AppContext from '../context/appContext';
+import { Link } from 'react-router-dom'
+
+export const CarritodeCompra = () => {
+
+  const {allProducts} = useContext(AppContext);
+  const {setAllProducts} = useContext(AppContext);
+  const {total} = useContext(AppContext);
+  const {setTotal} = useContext(AppContext);
+  const {countProducts} = useContext(AppContext);
+  const {setCountProducts} = useContext(AppContext);
+
+
   const [active, setActive] = useState(false);
     
   const onDeleteProduct = (product) =>{
@@ -39,7 +45,7 @@ export const Header = ({allProducts,
           </div>
           <div className={`${styles.containerCartProducts} ${active ? '' : styles.hiddenCart}`}>
             {
-              allProducts.length ? (
+              allProducts && allProducts.length ? (
                 <>
                 	<div className={styles.rowProduct}>
                     {allProducts.map(product => (
@@ -78,7 +84,8 @@ export const Header = ({allProducts,
                     <h3>Total:</h3>
                     <span className={styles.totalPagar}>${total}</span>
                 </div>
-
+                
+                <Link to={"/login"}><button className={styles.btnClearAll} >Comprar ahora</button></Link>
                 <button className={styles.btnClearAll} onClick={onClearCart}>Vaciar Carrito</button>
                 
                 </>
@@ -94,4 +101,4 @@ export const Header = ({allProducts,
     </header>)
 };
 
-export default Header
+export default CarritodeCompra

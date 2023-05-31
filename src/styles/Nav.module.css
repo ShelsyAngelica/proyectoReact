@@ -6,12 +6,17 @@
     background-color: #1ED760;
     align-items: center;
 } 
+.logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
 .ul{
     padding: 0; 
     margin: 0;
     display:flex;    
     align-items: center;   
-     height: 60px;
+    height: 60px;
     list-style:none;
 }
 
@@ -19,6 +24,7 @@
      
     border-radius:8px ;
     padding: 8px;
+    text-decoration: none;
 }
 
 .Logo{
@@ -38,4 +44,15 @@
     font-size: 30px;
     color: rgb(252, 252, 244);
 
+}
+.img{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 640px){
+    .ul{
+        display: none;
+    }
 }

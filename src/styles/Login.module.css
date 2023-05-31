@@ -1,0 +1,50 @@
+.divContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1ED760;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #1ED760;
+    color: black;
+
+}
+
+.Usuario{
+    height: 200px;
+}
+.a{
+    margin: 30px;
+    color: #1ED760;
+}
+.a:hover{
+    color: black;
+}
+
