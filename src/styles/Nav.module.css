@@ -1,10 +1,14 @@
 .nav{ 
-    display: flex; /*para que se coloquen al ladodel otro en el nav */
+    display: flex;
     justify-content: space-between;
     padding: 0 24px;
     height: 80px;
     background-color: #1ED760;
     align-items: center;
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    width: 1200px;
 } 
 .logo{
     width: 90px;

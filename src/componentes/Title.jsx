@@ -1,6 +1,8 @@
+import style from '../styles/Title.module.css'
+
 const Title = () =>{
     return(
-        <div>Productos recomendados</div>
+        <div className={style.Title}>Productos recomendados</div>
     )
 
 }
