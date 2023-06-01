@@ -1,9 +1,9 @@
 .Contenedor{
     display: flex;
     align-items: flex-start;
-   
+    margin-top: 140px;
     justify-content: space-around;
-    margin-top: 60px;
+    
    
 }
 
