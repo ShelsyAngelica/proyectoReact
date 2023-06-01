@@ -1,10 +1,10 @@
-import React from 'react';
-import { data } from '../data';
 import styles from '../styles/productList.module.css'
-import  { useContext } from 'react'
+import {data} from '../data'
 import AppContext from '../context/appContext';
+import { useContext } from 'react';
 
-export const ProductListe = () => {
+
+const CardsHome = () =>{
 
     const {allProducts,setAllProducts,total,setTotal,countProducts,setCountProducts} = useContext(AppContext);
 
@@ -26,11 +26,12 @@ export const ProductListe = () => {
         setAllProducts([...allProducts, product]);
         
     };
-   
-   
-    return (
-        <div className={styles.containerItems}>
-            {data.map(product => (
+
+    return(
+
+        <>
+          <div className={styles.containerItems}>
+            {data.slice(10,14).map(product => (
                 <div  className={styles.item} key={product.id}>
                     <figure>
                         <img
@@ -43,8 +44,10 @@ export const ProductListe = () => {
                     </div>
                 </div>
             ))}
-        </div>
-    );
-};
+            </div>
+            
+        </>
+    )
+}
 
-export default ProductListe;
+export default CardsHome

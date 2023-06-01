@@ -1,0 +1,37 @@
+.container{
+    margin: 50px 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    height: 110px;
+    border-radius: 10px;
+    
+}
+.containerInfo{
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+figure{
+    margin: 0 20px;
+}
+.p{
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media (max-width: 640px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    
+}

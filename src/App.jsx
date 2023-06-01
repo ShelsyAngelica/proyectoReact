@@ -1,6 +1,15 @@
-import { useState } from 'react'
-import { ProductListe } from './componentes/ProductList'
+// import { ProductListe } from './componentes/ProductList'
 import Nav from './componentes/nav';
+import { Route,Routes } from 'react-router-dom';
+import Home from './containers/Home';
+import  Contactanos from './componentes/Contactanos'
+import AppContext from './context/appContext';
+import React, { useState } from 'react';
+import Productos from './containers/Productos'
+import Login from './componentes/Login/Login';
+import { AuthProvider } from './componentes/Login/AuthContext ';
+import Footer from './componentes/Footer';
+
 
 function App() {
   
@@ -9,22 +18,19 @@ function App() {
   const [countProducts, setCountProducts] = useState(0);
   return (
   <>
-     <Nav
-     allProducts ={allProducts}
-     setAllProducts={setAllProducts}
-     total = {total}
-     setTotal={setTotal}
-     countProducts={countProducts}
-     setCountProducts={setCountProducts}/>
-     
-    <ProductListe 
-     allProducts={allProducts}
-     setAllProducts={setAllProducts}
-     total = {total}
-     setTotal={setTotal}
-     countProducts={countProducts}
-     setCountProducts={setCountProducts}
-    />
+    <AppContext.Provider value={{allProducts,setAllProducts,total,setTotal,countProducts,setCountProducts}}>
+    <AuthProvider>
+      <Nav/>
+        <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/contactenos' element={<Contactanos/>} />
+            <Route path='/productos' element={<Productos/>} />
+            <Route path='/login' element={<Login/>} />
+            
+        </Routes>
+      <Footer/>
+    </AuthProvider>
+    </AppContext.Provider>
   </>
 
   );
