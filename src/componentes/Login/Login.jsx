@@ -3,6 +3,7 @@ import { AuthContext } from './AuthContext '
 import stylo from '../../styles/Login.module.css'
 import imagen from '../../Imagenes/imgUser.jpg'
 
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const {currentUser, error, login, logout } = useContext(AuthContext);
@@ -45,8 +46,11 @@ const Login = () => {
           />
           <button type="submit">Iniciar sesión</button>
           {error && <p>{error}</p>}
+          
+          <Link className={stylo.a} to={'/registrarse'}>Registrate</Link>
+          
 
-          <a className={stylo.a} href="">Registrate</a>
+         
         </form>
       )}
     </div>
