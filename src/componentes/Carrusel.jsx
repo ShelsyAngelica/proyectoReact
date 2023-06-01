@@ -4,10 +4,11 @@ import promo2 from '../Imagenes/promo2.jpg'
 import promo3 from '../Imagenes/promo3.jpg'
 import promo4 from '../Imagenes/promo4.jpg'
 import promo5 from '../Imagenes/promo5.jpg'
+import style from '../styles/carrusel.module.css'
 
 const Carrusel = () => {
   return (
-    <Carousel>
+    <Carousel className={style.carrusel}>
       <Carousel.Item interval={2000}>
         <img
           className="d-block w-100"
