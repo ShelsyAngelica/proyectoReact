@@ -36,14 +36,16 @@ const CardsHome = () => {
               <img src={product.urlImage} alt={product.nameProduct} />
             </figure>
             <div className={styles.infoProduct}>
-              <h2>{product.nameProduct}</h2>
+              <p>{product.nameProduct}</p>
               <p className={styles.price}>${product.price}</p>
               <button onClick={() => onAddProduct(product)}>Añadir al carrito</button>
             </div>
           </div>
         ))}
       </div>
+      <div className={styles.Vermas} >
       <button onClick={() => setCount(count + 4)}>Ver más</button>
+      </div>
     </>
   );
 };

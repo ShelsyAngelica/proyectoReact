@@ -6,9 +6,11 @@
     background-color: #1ED760;
     align-items: center;
     position: fixed;
+
     z-index: 22;
     top: 0;
     width: 1200px;
+
 } 
 .logo{
     width: 90px;
@@ -25,9 +27,14 @@
 }
 
 .li{
-     
+    text-decoration: none;
     border-radius:8px ;
     padding: 8px;
+    
+}
+
+a {
+    color: var(--bs-link-color);
     text-decoration: none;
 }
 
