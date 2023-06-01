@@ -9,7 +9,7 @@ import Productos from './containers/Productos'
 import Login from './componentes/Login/Login';
 import { AuthProvider } from './componentes/Login/AuthContext ';
 import Footer from './componentes/Footer';
-
+import Registrar from './componentes/Registrar';
 
 function App() {
   
@@ -26,6 +26,7 @@ function App() {
             <Route path='/contactenos' element={<Contactanos/>} />
             <Route path='/productos' element={<Productos/>} />
             <Route path='/login' element={<Login/>} />
+            <Route path='/registrarse' element={<Registrar/>} />
             
         </Routes>
       <Footer/>
