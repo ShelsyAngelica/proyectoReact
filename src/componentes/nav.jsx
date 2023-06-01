@@ -9,7 +9,7 @@ const Nav = () => {
 
 
     return (
-      <nav className={styles.nav}>
+      <nav className={styles.nav} id='menu'>
         <div className={styles.div}>
           <img className={styles.logo} src={logo} alt="" />
         </div>
@@ -21,7 +21,10 @@ const Nav = () => {
         <Link to={"/login"}><li><img className={styles.img} src={login} alt="" /></li></Link>
         </ul>
       </nav>
+
     );
-  };
+              
+    
+};
   
   export default Nav;
