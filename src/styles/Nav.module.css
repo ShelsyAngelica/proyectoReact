@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 22;
     top: 0;
+    width: 1200px;
 } 
 .logo{
     width: 80px;
