@@ -7,7 +7,7 @@ import style from '../styles/MedioPago.module.css'
 const MedioPago = () =>{
     return(
         <>
-            <div>
+            <div className={style.divContainer}>
                 <div className={style.container}>
                     <div className={style.containerInfo}>
                         <figure>

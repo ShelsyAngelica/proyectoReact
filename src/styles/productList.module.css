@@ -33,7 +33,13 @@ img{
     justify-content: center;
     margin-top: 140px;
 }
-
+.containerItems2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
 .item{
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -82,12 +88,15 @@ img{
     cursor: pointer;
     border-radius: 10px;
 }
-
-
-
+.containerButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 @media (max-width: 640px){
-    .containerItems{
+    .containerItems,
+    .containerItems2{
         grid-template-columns: repeat(auto-fill, 200px);
     }
     .item img{
