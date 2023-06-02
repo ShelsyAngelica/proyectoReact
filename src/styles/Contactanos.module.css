@@ -1,4 +1,4 @@
-.Contenedor{
+/* .Contenedor{
     display: flex;
     align-items: flex-start;
     margin-top: 140px;
@@ -59,4 +59,77 @@
 
 .Letra{
     font-weight:bold;
+} */
+
+.Contenedor{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 140px;
+  justify-content: space-around;
+  
+ 
+}
+
+.Formulario {
+  background-color: #1ED760;
+  padding: 80px;
+  
+  border-radius: 10px;
+}
+
+.Formulario h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.Formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Formulario input,
+.Formulario textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #7eea1f;
+  border: radius 3px; 
+  margin-bottom: 5px;
+}
+
+.Formulario button {
+  background-color: #f3e015;
+  color: #0b0101;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.Formulario button:hover {
+  background-color: #45a049;
+}
+
+
+.containerInfo{
+margin-top: 15px;
+}
+
+.Letra{
+  font-weight:bold;
+  font-size:20px ;
+  color: #0b0101;
+}
+
+@media (max-width: 640px){
+  .Contenedor{
+    display: flex;
+    align-items: center;     
+    flex-direction: column; 
+  }
+  .Formulario{
+  margin-bottom:50px;
+  }
 }

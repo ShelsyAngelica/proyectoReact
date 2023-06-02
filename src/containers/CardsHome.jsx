@@ -29,7 +29,7 @@ const CardsHome = () => {
 
   return (
     <>
-      <div className={styles.containerItems}>
+      <div className={styles.containerItems2}>
         {itemsToShow.map((product) => (
           <div className={styles.item} key={product.id}>
             <figure>
@@ -43,8 +43,8 @@ const CardsHome = () => {
           </div>
         ))}
       </div>
-      <div className={styles.Vermas} >
-      <button onClick={() => setCount(count + 4)}>Ver más</button>
+      <div className={styles.containerButton}>
+        <button onClick={() => setCount(count + 4)}>Ver más</button>
       </div>
     </>
   );

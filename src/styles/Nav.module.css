@@ -10,9 +10,15 @@
     top: 0;
 } 
 .logo{
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.logo:hover {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
 }
 .ul{
     padding: 0; 
@@ -61,6 +67,13 @@ a {
 
 @media (max-width: 640px){
     .ul{
-        display: none;
+        display: flex;
+        flex-direction: row;
+        font-size: 8px;
+    }
+    .nav{
+        justify-content: flex-start;
     }
 }
+
+

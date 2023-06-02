@@ -1,15 +1,20 @@
 const users = [
-    {
-      id: 1,
-      username: 'usuario1',
-      password: 'contraseña1'
-    },
-    {
-      id: 2,
-      username: 'usuario2',
-      password: 'contraseña2'
-    },
-    // Agrega más usuarios si es necesario
-  ];
+  {
+    id: 1,
+    username: 'Edwin',
+    password: '123456'
+  },
+  {
+    id: 2,
+    username: 'Shelsy',
+    password: '123456'
+  },
+  {
+    id: 3,
+    username: 'Johan',
+    password: '123456'
+  },
   
-  export default users;
+];
+
+export default users;
