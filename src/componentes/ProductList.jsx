@@ -37,7 +37,7 @@ export const ProductListe = () => {
                             src={product.urlImage}  />
                     </figure>
                     <div className={styles.infoProduct}>
-                        <h2>{product.nameProduct}</h2>
+                        <p>{product.nameProduct}</p>
                         <p className={styles.price}>${product.price}</p>
                         <button  onClick={() => onAddProduct(product)} >Añadir al carrito</button> 
                     </div>
